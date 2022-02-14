@@ -39,7 +39,7 @@
 //                   | LWR | GUI | SPC |   | ENT | ALT | RSE  |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SEMI    &kp BSPC
-   &mt LSHFT CAPS &mt LCTRL A &mt LALT R &mt LSHFT S &mt LGUI T &kp G   &kp M &mt RGUI N  &mt RSHFT E     &mt LALT I   &mt RCTRL O       &kp SQT
+   &mt LSHFT CAPS &mt LCTRL A &mt LALT R &mt LSHFT S &mt LGUI T &kp G   &kp M &kp N  &kp E     &kp I   &kp O       &kp SQT
    &kp LCTRL &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH    &kp ESC
                  &tog LOWER &kp LGUI &kp SPACE   &kp RET &kp RALT &tog RAISE
                         >;
@@ -94,7 +94,7 @@
 //                   | LWR | CTRL | SPC |   | ENT | ALT | RSE  |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SEMI    &kp BSPC
-   &mt LSHFT CAPS &mt LGUI A &mt LALT R &mt LSHFT S &mt LCTRL T &kp G   &kp M &mt RCTRL N  &mt RSHFT E     &mt LALT I   &mt RGUI O       &kp SQT
+   &mt LSHFT CAPS &mt LGUI A &mt LALT R &mt LSHFT S &mt LCTRL T &kp G   &kp M &kp N  &kp E     &kp I   &kp O       &kp SQT
    &kp LGUI &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH    &kp ESC
                  &tog LOWER &kp LCTRL &kp SPACE   &kp RET &kp RALT &tog RAISE
                         >;
