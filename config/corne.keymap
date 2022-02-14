@@ -16,7 +16,7 @@
 #define WORK    4
 
 &mt {
-        tapping-term-ms = <400>;
+        tapping-term-ms = <1000>;
 };
 
 / {
@@ -81,7 +81,7 @@
                         bindings = <
    &trans &trans &trans &trans &trans &trans      &trans &trans  &trans &trans &trans &trans
    &trans &trans &trans &trans &trans &trans      &trans &out OUT_TOG  &trans &trans &trans &trans
-   &trans &trans &trans &trans &trans &trans      &trans &to WORK  &to DEFAULT &trans &trans &trans
+   &trans &trans &trans &trans &trans &trans      &trans &tog WORK  &tog DEFAULT &trans &trans &trans
                     	     &trans   &trans &trans   &trans   &trans  &trans
                         >;
                 };
