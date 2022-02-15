@@ -15,10 +15,6 @@
 #define ADJUST  3
 #define WORK    4
 
-&mt {
-        tapping-term-ms = <3000>;
-};
-
 / {
 
         behaviors {
@@ -39,7 +35,7 @@
 //                    if-layers = <LOWER RAISE>;
 //                    then-layer = <ADJUST>;
 //                };
-        };
+//        };
 
         keymap {
                 compatible = "zmk,keymap";
