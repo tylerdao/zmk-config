@@ -29,13 +29,13 @@
                 };
                         };
 
-//        conditional_layers {
-//                compatible = "zmk,conditional-layers";
-//                tri_layer {
-//                    if-layers = <LOWER RAISE>;
-//                    then-layer = <ADJUST>;
-//                };
-//        };
+        conditional_layers {
+                compatible = "zmk,conditional-layers";
+                tri_layer {
+                    if-layers = <LOWER RAISE>;
+                    then-layer = <ADJUST>;
+                };
+        };
 
         keymap {
                 compatible = "zmk,keymap";
@@ -50,7 +50,7 @@
    &kp TAB   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SEMI    &kp BSPC
    &mt LSHFT CAPS &hm LCTRL A &hm LALT R &hm LSHFT S &hm LGUI T &kp G   &kp M &hm RGUI N  &hm RSHFT E     &hm LALT I   &hm RCTRL O       &kp SQT
    &kp LCTRL &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH    &kp ESC
-                 &kp LGUI &mo LOWER &kp SPACE   &kp RET &mo RAISE &kp RALT
+                 &kp LGUI &mo LOWER &kp SPACE   &kp RET &trans &kp RALT
                         >;
                 };
                 lower_layer {
@@ -63,7 +63,7 @@
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8   &kp N9    &kp N0 &kp DEL
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans   &kp LEFT &kp DOWN &kp UP    &kp RIGHT  &trans
    &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans      &trans &trans
-                          	        &kp LGUI     &trans       &kp SPACE      &kp RET  &mo ADJUST &kp RALT
+                          	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans &kp RALT
                         >;
                 };
 
@@ -103,7 +103,7 @@
 //                   | CTRL | LWR | SPC |   | ENT | RSE |  ALT |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SEMI    &kp BSPC
-   &mt LSHFT CAPS &hm LGUI A &hm LALT R &hm LSHFT S &hm RCTRL N  &hm RSHFT E     &hm LALT I   &hm RGUI O       &kp SQT
+   &mt LSHFT CAPS &hm LGUI A &hm LALT R &hm LSHFT S &hm LCTRL T &kp G   &kp M &hm RCTRL N  &hm RSHFT E     &hm LALT I   &hm RGUI O       &kp SQT
    &kp LGUI &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH    &kp ESC
                  &kp LCTRL &mo LOWER &kp SPACE   &kp RET &mo RAISE &kp RALT
                         >;
