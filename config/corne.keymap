@@ -22,20 +22,20 @@
                         compatible = "zmk,behavior-hold-tap";
                         label = "HOMEROW_MODS";
                         #binding-cells = <2>;
-                        tapping-term-ms = <250>;
+                        tapping-term-ms = <400>;
                         quick-tap-ms = <0>;
                         flavor = "tap-preferred";
                         bindings = <&kp>, <&kp>;
                 };
                         };
 
-//        conditional_layers {
-//                compatible = "zmk,conditional-layers";
-//                tri_layer {
-//                    if-layers = <LOWER RAISE>;
-//                    then-layer = <ADJUST>;
-//                };
-//        };
+        conditional_layers {
+                compatible = "zmk,conditional-layers";
+                tri_layer {
+                    if-layers = <LOWER RAISE>;
+                    then-layer = <ADJUST>;
+                };
+        };
 
         keymap {
                 compatible = "zmk,keymap";
