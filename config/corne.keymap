@@ -34,14 +34,14 @@
                         tapping-term-ms = <200>;
                         bindings = <&sk LSHFT>, <&caps_word>, <&kp CAPS>;
 
-                        }
+                        };
 
                 td1: tilde_toggle {
                         compatible = "zmk, "behavior-tap-dance";
                         label = "tilde_toggle";
                         tapping-term-ms = <200>;
                         bindings = <&kp ESC>, <&tog RAISE>, <&tog LOWER>;
-                        }
+                        };
                 };
 
         combos {
