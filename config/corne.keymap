@@ -31,8 +31,8 @@
                 td0: shift_caps {
                         compatible = "zmk, behavior-tap-dance";
                         label = "shift_caps";
-                        tapping-term-ms = <200>
-                        bindings = <&sk LSHFT>, <&caps_word>, <&kp CAPS>
+                        tapping-term-ms = <200>;
+                        bindings = <&sk LSHFT>, <&caps_word>, <&kp CAPS>;
 
                         }
 
@@ -40,7 +40,7 @@
                         compatible = "zmk, "behavior-tap-dance";
                         label = "tilde_toggle";
                         tapping-term-ms = <200>;
-                        bindings = <&kp ESC>, <&tog RAISE>, <&tog LOWER>
+                        bindings = <&kp ESC>, <&tog RAISE>, <&tog LOWER>;
                         }
                 };
 
