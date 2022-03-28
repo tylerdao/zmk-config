@@ -27,6 +27,21 @@
                         flavor = "tap-preferred";
                         bindings = <&kp>, <&kp>;
                         };
+
+                td0: shift_caps {
+                        compatible = "zmk, behavior-tap-dance";
+                        label = "shift_caps";
+                        tapping-term-ms = <200>
+                        bindings = <&sk LSHFT>, <&caps_word>, <&kp CAPS>
+
+                        }
+
+                td1: tilde_toggle {
+                        compatible = "zmk, "behavior-tap-dance";
+                        label = "tilde_toggle";
+                        tapping-term-ms = <200>;
+                        bindings = <&kp ESC>, <&tog RAISE>, <&tog LOWER>
+                        }
                 };
 
         combos {
@@ -63,8 +78,8 @@
 //                              | GUI     | LWR     | SPC |     | ENT |  RSE     | ALT      |
                         bindings = <
    &kp TAB   &kp Q       &kp W      &kp F       &kp P      &kp B        &kp J   &kp L       &kp U           &kp Y        &kp SEMI          &kp BSPC
-   &sk LSHFT &hm LCTRL A &hm LALT R &hm LSHFT S &hm LGUI T &kp G        &kp M   &hm RGUI N  &hm RSHFT E     &hm LALT I   &hm RCTRL O       &kp SQT
-   &kp LCTRL &kp Z       &kp X      &kp C       &kp D      &kp V        &kp K   &kp H       &kp COMMA       &kp DOT      &kp FSLH          &kp ESC
+   &td0 &hm LCTRL A &hm LALT R &hm LSHFT S &hm LGUI T &kp G        &kp M   &hm RGUI N  &hm RSHFT E     &hm LALT I   &hm RCTRL O       &kp SQT
+   &kp LCTRL &kp Z       &kp X      &kp C       &kp D      &kp V        &kp K   &kp H       &kp COMMA       &kp DOT      &kp FSLH          &td1
                                     &kp LGUI    &mo LOWER  &kp SPACE    &kp RET &mo RAISE   &kp RALT
                         >;
                 };
