@@ -29,16 +29,18 @@
                         };
 
                 td0: shift_caps {
-                        compatible = "zmk, behavior-tap-dance";
+                        compatible = "zmk,behavior-tap-dance";
                         label = "shift_caps";
-                        tapping-term-ms = <200>;
+                        #binding-cells = <0>;
+			tapping-term-ms = <200>;
                         bindings = <&sk LSHFT>, <&caps_word>, <&kp CAPS>;
 
                         };
 
                 td1: tilde_toggle {
-                        compatible = "zmk, "behavior-tap-dance";
+                        compatible = "zmk,behavior-tap-dance";
                         label = "tilde_toggle";
+			#binding-cells = <0>;
                         tapping-term-ms = <200>;
                         bindings = <&kp ESC>, <&tog RAISE>, <&tog LOWER>;
                         };
@@ -82,6 +84,7 @@
    &kp LCTRL &kp Z       &kp X      &kp C       &kp D      &kp V        &kp K   &kp H       &kp COMMA       &kp DOT      &kp FSLH          &td1
                                     &kp LGUI    &mo LOWER  &kp SPACE    &kp RET &mo RAISE   &kp RALT
                         >;
+  
                 };
                 
                 lower_layer {
